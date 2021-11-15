@@ -41,46 +41,62 @@
     <section class="row justify-content-center">
         <section class="col-12 col-sm-8 col-md-8">
 
-            <form class="row g-3 form-text">
+            <form class="row g-3 form-text" action="login.html" onsubmit="return evalidate()&&pvalidate()&&avalidate()&&a2validate()&&cvalidate()&&svalidate()&&phvalidate()">
+              <!-- email -->
+
                 <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email">
+                  <label for="emailerror" id=emailerror></label>
                 </div>
+
+                <!-- password -->
+
                 <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password">
+                  <div id="pass" class="form-text">Please provide minimum 8 characters</div>
+                  <label for="passerror" id=passerror></label>
                 </div>
+                <!-- address -->
+
                 <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                  <label for="aerror" id=aerror></label>
                 </div>
+
+                <!-- address2 -->
+
                 <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  <label for="address2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor">
+                  <label for="a2error" id=a2error></label>
                 </div>
+
+                <!-- city -->
                 <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <label for="city" class="form-label">City</label>
+                  <input type="text" class="form-control" id="city">
+                  <label for="cerror" id=cerror></label>
                 </div>
+
+                <!-- state -->
                 <div class="col-md-4">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
+                  <label for="state" class="form-label">State</label>
+                  <input type="text" class="form-control" id="state">
+                  <label for="serror" id=serror></label>
                 </div>
+                <!-- zip -->
                 <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
+                  <label for="phone" class="form-label">Phone number</label>
+                  <input type="text" class="form-control"  id="phone">
+                  <label for="perror" id=perror></label>
                 </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                </div>
+
+                
+
+                
                 <div class="col-12">
                   <button type="submit" class="btn btn-primary">Sign in</button>
                 </div>
@@ -88,6 +104,10 @@
         </section>
     </section>
   </section>
+
+  <script src="signup.js" >
+
+  </script>
  
  </body>
     
